@@ -99,7 +99,8 @@ def list_services(passwords):
             print(Fore.LIGHTGREEN_EX + f"{service}")
 
 def main():
-    choice = input("Hai già una chiave segreta? (Sì/No): ").strip().lower()
+    choice = input("Hai già una chiave segreta? (Sì/No):"
+                  "\n").strip().lower()
     
     if choice in ["si", "sì", "s", "y", "yes"]:
         key = load_key()
